@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create Account – ForgeFill Test</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 420px; margin: 40px auto; padding: 0 16px; }
+    h1 { font-size: 1.5rem; }
+    label { display: block; margin-top: 12px; font-size: 0.9rem; }
+    input { width: 100%; padding: 10px; margin-top: 4px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+    button { margin-top: 20px; width: 100%; padding: 12px; background: #0a84ff; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+    .note { margin-top: 24px; font-size: 0.85rem; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Create your account</h1>
+  <p>This is a local test form for ForgeFill. Load the extension, save a profile, then click the blue FF button.</p>
+
+  <form>
+    <label>First name
+      <input type="text" name="firstName" autocomplete="given-name" />
+    </label>
+    <label>Last name
+      <input type="text" name="lastName" autocomplete="family-name" />
+    </label>
+    <label>Email
+      <input type="email" name="email" autocomplete="email" />
+    </label>
+    <label>Password
+      <input type="password" name="password" autocomplete="new-password" />
+    </label>
+    <label>Confirm password
+      <input type="password" name="passwordConfirm" autocomplete="new-password" />
+    </label>
+    <label>Phone (optional)
+      <input type="tel" name="phone" autocomplete="tel" />
+    </label>
+    <button type="submit">Create account</button>
+  </form>
+
+  <p class="note">After filling, the password fields should contain a matching Apple-style strong password. Nothing is submitted anywhere.</p>
+</body>
+</html>
